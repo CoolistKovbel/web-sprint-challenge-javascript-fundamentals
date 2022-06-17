@@ -26,13 +26,31 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. Explain the differences between `.map`, `.reduce` and `.filter` and describe a use case for each. 
 
+- .map: allows you to create a new array without effecting the original array and you can loop over each element inside the array and change it any variable if neccessary
+
+- .reduce: Basically allows you to get add up all the values in an array
+
+- .filter: allows you to run through you array and filter out any specific element if your result in finding the value returns true.
+
 2. Explain the difference between a callback and a higher order function.
+
+- a callback allows you to add the parameters needed for the function to do its needs and when complete it will return the result
+- a higher order function is a function that basically has all the needed code to be able to be used and support other functions as a callback
 
 3. Explain what a closure is.
 
+Its basically having access to a certain variable through layers of scope. If variable is outside the function you can access it from an inner function
+
 4. Describe the four principles of the 'this' keyword.
 
+- global scope: when the 'this' keyword is used it will be shown inside the window
+- implicit binding: when an function is called within the object using dot notation the 'this' keyword will be used to represent the object
+- New Binding: this is basically where the function creates a constructor function binding the object values to the function constructor allows the 'this' keyword throughout the object and used in functions.
+- explicit binding: whenver we use other methods like '.call' or '.apply' the 'this' keyword is used explicity
+
 5. Why do we need super() in an extended class?
+
+- in order for us to be able to also get access to the variables that were constructed in the parent class we call the super() in order to pass the props from parent to child.
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 
