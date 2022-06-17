@@ -41,7 +41,7 @@ function summation(num) {
   return stable
 }
 
-console.log(summation(4))
+
 
 
 // 🦁🦁🦁 Topic 2: ADVANCED Array Methods 🦁🦁🦁
@@ -68,9 +68,15 @@ const zooAnimals = [
   💡 NOTE: the array returned should be an array of strings, and each string should follow this pattern: "name: {name}, scientific: {scientific name}"
   */
 
-  function animalNames(/*Your Code Here*/){
-    /*Your Code Here*/
+  function animalNames(arr){
+    const displayName = []
+    arr.forEach((element, index) => {
+      displayName.push(`name: ${element.animal_name}, scientific: ${element.scientific_name}`)
+    })
+    return displayName
   }
+
+
   
 
   /* 🦁🦁🦁 Request 2: .map() 🦁🦁🦁
@@ -83,8 +89,9 @@ const zooAnimals = [
   💡 NOTE: Do some research for other methods that can help help you
   */
 
-  function lowerCaseNames(/*Your Code Here*/){
-    /*Your Code Here*/
+  function lowerCaseNames(arr){
+    return arr.map((element, index) => element.animal_name.toLowerCase())
+    
   }
   
   
@@ -96,11 +103,11 @@ const zooAnimals = [
   3. Return this new array
   */
 
-  function lowPopulationAnimals(/*Your Code Here*/){
-    /*Your Code Here*/
+  function lowPopulationAnimals(arr){
+    return arr.filter((element, index) => element.population < 5)
   }
   
-
+  
   /* 🦁🦁🦁 Request 4: .reduce() 🦁🦁🦁
   The zoo needs to know their total animal population across the United States. 
   USe USApop to do the following:
