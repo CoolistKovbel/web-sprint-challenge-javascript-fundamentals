@@ -16,7 +16,7 @@ function myFunction() {
 //myFunction();
 
 //🚀🚀🚀 ⬇️ 📝 Explanation ⬇️ 📝 🚀🚀🚀: 
-
+// the function can access the variable internal because the function was created inside the same scope as the internal variable and they both live inside the scope of myFunction 
 
 
 
@@ -30,11 +30,19 @@ function myFunction() {
 💡 NOTE: you may use a for loop for this function if you wish 
 */
 
-function summation(/*Your Code Here*/) {
-  /*Your Code Here*/
+function summation(num) {
 
+  let stable = 0
+
+  for (var i = 1; i <= num; i++){
+    stable += i
   }
- 
+
+  return stable
+}
+
+console.log(summation(4))
+
 
 // 🦁🦁🦁 Topic 2: ADVANCED Array Methods 🦁🦁🦁
 // Given this zoo data from around the United States, follow the instructions below. Use the specific array methods in the requests below to solve the problems.
